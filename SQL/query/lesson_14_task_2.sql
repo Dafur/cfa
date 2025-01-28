@@ -2,7 +2,7 @@
 select stuff(
   cast(
       (
-      select [text()] = ', ' + convert(varchar(max), student_last_name)
+      select [text()] = ', ' + student_last_name
       from
       (
         select student_last_name
